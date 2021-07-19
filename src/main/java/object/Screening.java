@@ -29,7 +29,7 @@ public class Screening {
         return movie.calculateMovieFee(this).times(audienceCount);
     }
 
-    public Reservation reserve(Customer customer, int audienceCount){
-        return new Reservation(customer,this, calculateFee(audienceCount),audienceCount);
+    public Reservation reserve(int audienceCount, Customer...customer){
+        return new Reservation(this, calculateFee(audienceCount),audienceCount, customer);
     }
 }
