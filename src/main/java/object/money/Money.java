@@ -1,4 +1,4 @@
-package object;
+package object.money;
 
 import java.math.BigDecimal;
 

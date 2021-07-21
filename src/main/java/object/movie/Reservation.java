@@ -1,4 +1,6 @@
-package object;
+package object.movie;
+
+import object.money.Money;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,7 +1,7 @@
 package object.discountcondition;
 
-import object.Screening;
+import object.movie.Screening;
 
 public interface DiscountCondition {
-    public boolean isSatisfiedBy(Screening screening);
+    boolean isSatisfiedBy(Screening screening);
 }

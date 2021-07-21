@@ -1,7 +1,7 @@
 package object.discountpolicy;
 
-import object.Money;
-import object.Screening;
+import object.money.Money;
+import object.movie.Screening;
 
 public class NoneDiscountPolicy implements DiscountPolicy{
     @Override

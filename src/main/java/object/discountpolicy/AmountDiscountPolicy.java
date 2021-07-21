@@ -1,7 +1,7 @@
 package object.discountpolicy;
 
-import object.Money;
-import object.Screening;
+import object.money.Money;
+import object.movie.Screening;
 import object.discountcondition.DiscountCondition;
 
 public class AmountDiscountPolicy extends DefaultDiscountPolicy{

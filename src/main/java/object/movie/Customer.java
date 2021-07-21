@@ -1,4 +1,4 @@
-package object;
+package object.movie;
 
 public class Customer {
     private Long id;

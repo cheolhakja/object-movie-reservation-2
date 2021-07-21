@@ -1,6 +1,6 @@
 package object.discountcondition;
 
-import object.Screening;
+import object.movie.Screening;
 
 public class SequenceCondition implements DiscountCondition{
     private int sequence;

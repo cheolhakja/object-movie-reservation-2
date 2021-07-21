@@ -1,4 +1,6 @@
-package object;
+package object.movie;
+
+import object.money.Money;
 
 import java.time.LocalDateTime;
 

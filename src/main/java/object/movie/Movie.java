@@ -1,5 +1,6 @@
-package object;
+package object.movie;
 
+import object.money.Money;
 import object.discountpolicy.DiscountPolicy;
 
 import java.time.Duration;

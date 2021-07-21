@@ -1,7 +1,7 @@
 package object.discountpolicy;
 
-import object.Money;
-import object.Screening;
+import object.money.Money;
+import object.movie.Screening;
 import object.discountcondition.DiscountCondition;
 
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public abstract class DefaultDiscountPolicy implements DiscountPolicy{
-    private List<DiscountCondition> conditions = new ArrayList<DiscountCondition>();
+    private List<DiscountCondition> conditions = new ArrayList<>();
 
     public DefaultDiscountPolicy(DiscountCondition ... conditions) {
         this.conditions = Arrays.asList(conditions);

@@ -1,5 +1,9 @@
 package object;
 
+import object.money.Money;
+import object.movie.Customer;
+import object.movie.Reservation;
+import object.movie.Screening;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
