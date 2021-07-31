@@ -34,4 +34,9 @@ public class Screening {
     public Reservation reserve(int audienceCount, Customer...customer){
         return new Reservation(this, calculateFee(audienceCount),audienceCount, customer);
     }
+
+    //----------
+    public Movie getMovie() {
+        return movie;
+    }
 }
