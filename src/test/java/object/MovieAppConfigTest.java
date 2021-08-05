@@ -44,6 +44,13 @@ public class MovieAppConfigTest {
         Assertions.assertThat(screening1.getMovie()).isSameAs(screening2.getMovie());
     }
 
+    @Test
+    void findDiscountPolicy() {
+        ApplicationContext ac = new AnnotationConfigApplicationContext(MovieAppConfig.class, DiscountAppConfig.class);
+        Movie movie = ac.getBean("movie", Movie.class);
+        System.out.println(movie.getDiscountPolicy());
+    }
+
     @Configuration
     static class MovieAppConfig {
         @Bean
