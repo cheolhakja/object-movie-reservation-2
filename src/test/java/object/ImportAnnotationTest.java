@@ -24,7 +24,7 @@ public class ImportAnnotationTest {
     }
 
     @Test
-    void finfAllBeansUsingImportAnnotation() {
+    void findAllBeansUsingImportAnnotation() {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(MovieAppConfig.class);
         String[] beanDefinitionNames = ac.getBeanDefinitionNames();
         for(String name : beanDefinitionNames) {
