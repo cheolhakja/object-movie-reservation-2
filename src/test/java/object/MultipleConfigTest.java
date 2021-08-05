@@ -34,7 +34,7 @@ public class MultipleConfigTest {
     }
 
     @Test
-    public void signletonTest() {
+    public void singletonTest() {
         ApplicationContext ac = new AnnotationConfigApplicationContext(MovieAppConfig.class, DiscountAppConfig.class);
         Screening screening1 = ac.getBean("screening", Screening.class);
         Screening screening2 = ac.getBean("screening", Screening.class);
