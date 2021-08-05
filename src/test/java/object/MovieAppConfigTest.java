@@ -12,6 +12,7 @@ import object.movie.Screening;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
@@ -47,7 +48,7 @@ public class MovieAppConfigTest {
     static class MovieAppConfig {
         @Bean
         public Screening screening(@Autowired DiscountPolicy discountPolicy) {
-            return new Screening(movie(discountPolicy), 1,
+            return new Screening(movie(null), 1,
                     LocalDateTime.of(2021,6,1,13,0));
             //(의문)autowired가 있는데 movie()에 매개변수를 넘겨도 되나?
             //(의문) 매개변수로 넘어간게 들어가나 아니면 autowired로 주입받은게 들어가나?
